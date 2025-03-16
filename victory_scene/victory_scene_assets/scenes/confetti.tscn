@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://44ytr0r3sptj"]
+
+[ext_resource type="Script" path="res://victory_scene_assets/scripts/confetti.gd" id="1_ikfpl"]
+
+[sub_resource type="Curve" id="Curve_ukovm"]
+_data = [Vector2(0, 0.10989), 0.0, 0.0, 0, 0, Vector2(1, 0.274725), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="confetti" type="Node2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_ikfpl")
+
+[node name="green" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 100
+lifetime = 6.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.6
+randomness = 0.2
+local_coords = true
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 130.0
+initial_velocity_max = 178.0
+angular_velocity_min = 283.94
+angular_velocity_max = 283.94
+scale_amount_max = 30.0
+scale_amount_curve = SubResource("Curve_ukovm")
+color = Color(0.321569, 1, 0.317647, 0.639216)
+
+[node name="red" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 100
+lifetime = 6.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.6
+randomness = 0.2
+local_coords = true
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 130.0
+initial_velocity_max = 178.0
+angular_velocity_min = 283.94
+angular_velocity_max = 283.94
+scale_amount_max = 30.0
+scale_amount_curve = SubResource("Curve_ukovm")
+color = Color(1, 0, 0.137255, 1)
+
+[node name="yellow" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 100
+lifetime = 6.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.6
+randomness = 0.2
+local_coords = true
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 130.0
+initial_velocity_max = 178.0
+angular_velocity_min = 283.94
+angular_velocity_max = 283.94
+scale_amount_max = 30.0
+scale_amount_curve = SubResource("Curve_ukovm")
+color = Color(1, 0.894118, 0, 1)
+
+[node name="purpil" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 100
+lifetime = 6.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.6
+randomness = 0.2
+local_coords = true
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 130.0
+initial_velocity_max = 178.0
+angular_velocity_min = 283.94
+angular_velocity_max = 283.94
+scale_amount_max = 30.0
+scale_amount_curve = SubResource("Curve_ukovm")
+color = Color(0.627451, 0, 0.745098, 0.827451)

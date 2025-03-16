@@ -1,0 +1,356 @@
+[gd_scene load_steps=12 format=3 uid="uid://cbp0kqv5p7xpn"]
+
+[ext_resource type="Script" path="res://victory_scene_assets/scripts/victory_scene.gd" id="1_6i7c0"]
+[ext_resource type="Texture2D" uid="uid://l88vh6fi6ccn" path="res://victory_scene_assets/PNGs/b&w star.png" id="1_hq7v8"]
+[ext_resource type="Texture2D" uid="uid://cdjljjv05d6fa" path="res://victory_scene_assets/PNGs/star.png" id="2_fqvj7"]
+[ext_resource type="PackedScene" uid="uid://44ytr0r3sptj" path="res://victory_scene_assets/scenes/confetti.tscn" id="4_mgpte"]
+[ext_resource type="Texture2D" uid="uid://do0mlm0bhlybs" path="res://victory_scene_assets/PNGs/14245164_Game_design-3.png" id="7_tvc7i"]
+[ext_resource type="PackedScene" uid="uid://xc4lvi5a0ksj" path="res://victory_scene_assets/scenes/star_particle.tscn" id="8_i8xaf"]
+
+[sub_resource type="Animation" id="Animation_o1ve4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Victory/star-one/B&wStar:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.371667, 0.371667)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Victory/star-one/Star:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.359583, 0.359583)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Victory/star-three/Star-3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.342, 0.342)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Victory/star-two/Star-2:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.342, 0.342)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(842, 681)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.80972, 1.80972)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Victory:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 4)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Victory/confetti")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_emit"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_v1qgr"]
+resource_name = "victory_scene"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Victory/star-one/B&wStar:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.8),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.371667, 0.371667)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Victory/star-one/Star:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.8, 2.06667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.36, 0.36)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Victory/star-two/Star-2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2.06667, 2.43333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.36, 0.36)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Victory/star-three/Star-3:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.43333, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.36, 0.36)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.06667, 3.76667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(786, 172), Vector2(804, 652)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Button:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(3.07667, 3.76667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-0.68, 0.68)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Victory:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.0333333, 1.13333, 1.73333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(4.3, 4.3), Vector2(3.3, 3.3)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Victory/confetti")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_emit"
+}]
+}
+tracks/8/type = "method"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Victory/star particle-1")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(2.06667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"emit"
+}]
+}
+tracks/9/type = "method"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Victory/star particle-2")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(2.43333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"emit"
+}]
+}
+tracks/10/type = "method"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Victory/star particle-3")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(2.8),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"emit"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gd8ld"]
+_data = {
+"RESET": SubResource("Animation_o1ve4"),
+"victory_scene": SubResource("Animation_v1qgr")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3dic7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h4p24"]
+texture_margin_top = 30.0
+
+[node name="Victory scene" type="Node2D"]
+script = ExtResource("1_6i7c0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_gd8ld")
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Victory" type="Sprite2D" parent="."]
+position = Vector2(947, 539)
+scale = Vector2(1e-05, 1e-05)
+
+[node name="star-one" type="Node2D" parent="Victory"]
+position = Vector2(-85.25, -34.3981)
+rotation = -0.349066
+scale = Vector2(0.324074, 0.324074)
+metadata/_edit_group_ = true
+
+[node name="B&wStar" type="Sprite2D" parent="Victory/star-one"]
+scale = Vector2(0.371667, 0.371667)
+texture = ExtResource("1_hq7v8")
+
+[node name="Star" type="Sprite2D" parent="Victory/star-one"]
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("2_fqvj7")
+
+[node name="star-two" type="Node2D" parent="Victory"]
+z_index = 100
+position = Vector2(-8.86108, -61.25)
+scale = Vector2(0.324074, 0.324074)
+metadata/_edit_group_ = true
+
+[node name="B&wStar-2" type="Sprite2D" parent="Victory/star-two"]
+scale = Vector2(0.371667, 0.371667)
+texture = ExtResource("1_hq7v8")
+
+[node name="Star-2" type="Sprite2D" parent="Victory/star-two"]
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("2_fqvj7")
+
+[node name="star-three" type="Node2D" parent="Victory"]
+position = Vector2(67.5278, -34.3981)
+rotation = 0.349066
+scale = Vector2(0.324074, 0.324074)
+metadata/_edit_group_ = true
+
+[node name="B&wStar-3" type="Sprite2D" parent="Victory/star-three"]
+scale = Vector2(0.371667, 0.371667)
+texture = ExtResource("1_hq7v8")
+
+[node name="Star-3" type="Sprite2D" parent="Victory/star-three"]
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("2_fqvj7")
+
+[node name="confetti" parent="Victory" instance=ExtResource("4_mgpte")]
+z_index = 99
+position = Vector2(-7.5, -59.5)
+scale = Vector2(1, 1)
+
+[node name="star particle-1" parent="Victory" instance=ExtResource("8_i8xaf")]
+position = Vector2(-81.5151, -33.3333)
+
+[node name="star particle-2" parent="Victory" instance=ExtResource("8_i8xaf")]
+position = Vector2(-8.78788, -60.6061)
+
+[node name="star particle-3" parent="Victory" instance=ExtResource("8_i8xaf")]
+position = Vector2(69.697, -31.8182)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 786.0
+offset_top = 172.0
+offset_right = 1054.0
+offset_bottom = 450.0
+scale = Vector2(1e-05, 1e-05)
+pivot_offset = Vector2(130, 135)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3dic7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_h4p24")
+icon = ExtResource("7_tvc7i")
+flat = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

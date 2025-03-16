@@ -1,0 +1,18 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742158465
+export_presets.cfg::TextFile::-1::1741030409::0::1::::<><>::
+icon.svg::CompressedTexture2D::8720966556489432986::1742158248::1742158368::1::::<><>::
+README.md::TextFile::-1::1742158248::0::1::::<><>::
+::res://victory_scene_assets/::1742158443
+::res://victory_scene_assets/PNGs/::1742158574
+14245164_Game_design-3.png::CompressedTexture2D::8194264222464964412::1742158248::1742158444::1::::<><>::
+b&w star.png::CompressedTexture2D::842243324127101489::1742155174::1742158578::1::::<><>::
+star.png::CompressedTexture2D::5002671763479586046::1742155174::1742158578::1::::<><>::
+::res://victory_scene_assets/scenes/::1742158443
+confetti.tscn::PackedScene::2096835490608868731::1742158438::0::1::::<><>::res://victory_scene_assets/scripts/confetti.gd
+star_particle.tscn::PackedScene::1620253712418891549::1742158438::0::1::::<><>::res://victory_scene_assets/scripts/star_particle.gd
+victory_scene.tscn::PackedScene::4875532534292229335::1742158443::0::1::::<><>::res://victory_scene_assets/scripts/victory_scene.gd<>uid://56ianega8mur::::res://assets/b&w star.png<>uid://dpplujckbark4::::res://assets/star.png<>uid://44ytr0r3sptj::::res://victory_scene_assets/scenes/confetti.tscn<>uid://jukt6ejm0x1b::::res://scenes/return.png<>uid://do0mlm0bhlybs::::res://victory_scene_assets/PNGs/14245164_Game_design-3.png<>uid://xc4lvi5a0ksj::::res://victory_scene_assets/scenes/star_particle.tscn
+::res://victory_scene_assets/scripts/::1742158438
+confetti.gd::GDScript::-1::1742158248::0::1::::<>Node2D<>::
+star_particle.gd::GDScript::-1::1742158249::0::1::::<>Node2D<>::
+victory_scene.gd::GDScript::-1::1742158249::0::1::::<>Node2D<>::
